@@ -1,0 +1,20 @@
+.image-button {
+    height: 110px;
+    width: 100px;
+    border-width: 4px;
+    border-style: solid;
+    border-color:lightblue;  
+}
+
+.image-button:hover {
+    cursor:grab;
+    border-color: yellow;
+}
+
+.title {
+    display: flex;
+    font-weight: bold;
+    font-family: 'Times New Roman', arial;
+    font-size: 30px;
+    justify-content: center;
+}
