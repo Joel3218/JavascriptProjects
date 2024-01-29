@@ -1,24 +1,40 @@
 body {
     padding:0;
     margin:0;
-    min-height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background:rgb(255, 255, 255);
 }
 
 .container {
-    right: 40px;
-    display:flex;
-    align-items:right;
-    justify-content: right;
     width: 45%;
     height: 45vh;
     padding:10px;
-    margin-left: 250px;
-    margin-top:250px;
     border-radius:10px;
-    box-shadow:12px 12px 20px 2px rgb(130, 122, 206), -12px -12px 20px 2px rgb(228, 247, 146);
+    box-shadow:12px 12px 20px 2px rgb(100, 86, 233), -12px -12px 20px 2px rgb(228, 247, 146);
 }
 
 .title {
-    
+   position:relative;
+   top:-400px;
+   left:200px;
 }
+
+.display {
+    width:97%;
+    height:70px;
+    font-size:35px;
+    outline:none;
+    border-radius: 15px;
+    border-style:solid;
+    text-align:right;
+    padding-right: 10px;
+    background: white;
+    box-shadow:inset 5px 5px 5px rgb(244, 248, 227),
+     inset -5px -5px 5px rgb(205, 205, 247);
+}
+
+
+ 
