@@ -2,8 +2,8 @@
 <html>
     <head> 
         <title>Calculator</title> 
-        <link rel="stylesheet" href="..\styles\general.css"/>
-        <link rel="stylesheet" href="..\styles\calculator.css"/>
+        <link rel="stylesheet" href="../styles/general.css"/>
+        <link rel="stylesheet" href="../styles/calculator.css"/>
     </head>
     <body>
         <div class ="title">Calculator</div>
@@ -11,53 +11,56 @@
             <div>
                 <input type="text" placeholder="0" class="display">
             </div>
-
+        <div class="grid">
         <div class="buttons">
             <div class="row">
-                <button class = small-button>CE</button>
-                <button class = small-button>x!</button>
-                <button class = small-button>(</button>
-                <button class = small-button>)</button>
-                <button class = small-button>%</button>
-                <button class = small-button>AC</button>
+                <button class = "small-button">CE</button>
+                <button class = "small-button">x!</button>
+                <button class = "small-button">(</button>
+                <button class = "small-button">)</button>
+                <button class = "small-button">%</button>
+                <button class = "small-button">AC</button>
             </div>
 
             <div class="row">
-                <button class = small-button>sin</button>
-                <button class = small-button>pi</button>
-                <button class = small-button>7</button>
-                <button class = small-button>8</button>
-                <button class = small-button>9</button>
-                <button class = small-button>/</button>
+                <button class = "sin">sin</button>
+                <button class = "pi">pi</button>
+                <button class = "small-button">7</button>
+                <button class = "small-button">8</button>
+                <button class = "small-button">9</button>
+                <button class = "small-button">/</button>
             </div>
 
             <div class="row">
-                <button class = small-button>cos</button>
-                <button class = small-button>log</button>
-                <button class = small-button>4</button>
-                <button class = small-button>5</button>
-                <button class = small-button>6</button>
-                <button class = small-button>*</button>
+                <button class = "cos">cos</button>
+                <button class = "log">log</button>
+                <button class = "small-button">4</button>
+                <button class = "small-button">5</button>
+                <button class = "small-button">6</button>
+                <button class = "small-button">*</button>
             </div>
 
             <div class="row">
-                <button class = small-button>tan</button>
-                <button class = small-button>root</button>
-                <button class = small-button>1</button>
-                <button class = small-button>2</button>
-                <button class = small-button>3</button>
-                <button class = small-button>-</button>
+                <button class = "tan">tan</button>
+                <button class = "root">root</button>
+                <button class = "small-button">1</button>
+                <button class = "small-button">2</button>
+                <button class = "small-button">3</button>
+                <button class = "small-button">-</button>
             </div>
 
             <div class="row">
-                <button class = small-button>e</button>
-                <button class = small-button>x^y</button>
-                <button class = small-button>0</button>
-                <button class = small-button>.</button>
-                <button class = small-button>=</button>
-                <button class = small-button>+</button>
+                <button class = "e">e</button>
+                <button class = "raised">x^2</button>
+                <button class = "small-button">0</button>
+                <button class = "small-button">.</button>
+                <button onclick = "screen.value = eval(screen.value)">=</button>
+                <button class = "small-button">+</button>
             </div>
         </div>
     </div>
+    </div>
+
+    <script src = "../scripts/calculator.js"></script>
     </body>
 </html>

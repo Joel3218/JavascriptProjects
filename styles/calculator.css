@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-    width: 45%;
-    height: 45vh;
+    width: 450px;
+    height: 450px;
     padding:10px;
     border-radius:10px;
     box-shadow:12px 12px 20px 2px rgb(100, 86, 233), -12px -12px 20px 2px rgb(228, 247, 146);
@@ -23,7 +23,7 @@ body {
 }
 
 .display {
-    width:97%;
+    width:435px;
     height:70px;
     font-size:35px;
     outline:none;
@@ -36,5 +36,23 @@ body {
      inset -5px -5px 5px rgb(205, 205, 247);
 }
 
+.buttons {
+    width:100%;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
- 
+.buttons .row button {
+    width: 55px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin:10px 5px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px black,
+                -5px -5px 8px white;   
+}
