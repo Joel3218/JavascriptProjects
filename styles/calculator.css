@@ -56,3 +56,16 @@ body {
     box-shadow: 5px 5px 8px black,
                 -5px -5px 8px white;   
 }
+
+.css:hover {
+    background-color: rgb(253, 253, 141);
+    border-style:dotted;
+}
+
+.css:active {
+    background-color: rgb(252, 252, 77);
+}
+
+.css {
+    font-family: 'Roboto', 'Times New Roman';
+}
