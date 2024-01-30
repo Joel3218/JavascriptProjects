@@ -1,6 +1,7 @@
 let screen = document.querySelector(".display");
 let button = document.querySelectorAll(".small-button");
 
+//add event listeners for all buttons which need a function
 document.querySelector('.sin').addEventListener('click', () => { 
     sin();
 });
