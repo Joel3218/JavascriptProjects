@@ -14,7 +14,12 @@ body {
     padding:10px;
     border-radius:10px;
     box-shadow:12px 12px 20px 2px rgb(100, 86, 233), -12px -12px 20px 2px rgb(228, 247, 146);
-}
+    animation-name: containerGlow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}   
 
 .title {
    position:relative;
@@ -34,6 +39,11 @@ body {
     background: white;
     box-shadow:inset 5px 5px 5px rgb(244, 248, 227),
      inset -5px -5px 5px rgb(205, 205, 247);
+    animation-name: displayGlow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
 .buttons {
@@ -68,4 +78,38 @@ body {
 
 .css {
     font-family: 'Roboto', 'Times New Roman';
+}
+
+@keyframes displayGlow {
+    from {
+        box-shadow: inset 5px 5px 5px rgb(244, 248, 227, 1),
+        inset -5px -5px 5px rgb(205, 205, 247, 1);
+    }
+    to {
+        box-shadow: inset 5px 5px 12px rgba(201, 240, 28, 0.5),
+        inset -5px -5px 12px rgba(14, 14, 241, 0.5),
+        inset 0px 5px 12px rgba(105, 128, 6, 0.5),
+        inset -0px -5px 12px rgba(2, 2, 155, 0.5),
+        inset 5px 0px 12px rgba(88, 107, 4, 0.5),
+        inset -5px -0px 12px rgba(1, 1, 77, 0.5),
+        inset 0px 0px 12px rgba(31, 37, 1, 0.5),
+        inset 0px 0px 12px rgba(1, 1, 29, 0.5);
+    }
+}
+
+@keyframes containerGlow {
+    from {
+        box-shadow: 12px 12px 30px 2px rgb(100, 86, 233, 1),
+         -12px -12px 30px 2px rgb(228, 247, 146, 1);
+    }
+    to {
+        box-shadow: 12px 12px 30px 2px rgba(26, 6, 206, 0.5),
+        -12px -12px 30px 2px rgba(190, 212, 89, 0.5),
+        0px 12px 30px 2px rgba(16, 3, 129, 0.5),
+        -0px -12px 30px 2px rgba(171, 206, 13, 0.5),
+        12px 0px 30px 2px rgba(7, 1, 58, 0.5),
+        -12px -0px 30px 2px rgba(86, 105, 2, 0.5),
+        0px 0px 30px 2px rgba(3, 0, 26, 0.5),
+        0px 0px 30px 2px rgba(15, 19, 1, 0.5);
+    }
 }
