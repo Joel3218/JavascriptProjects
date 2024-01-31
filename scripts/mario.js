@@ -11,7 +11,7 @@ class Sprite{
 // place mario on the game
 // game coordinates
 class Entity {
-    constructor(sprite, posX, posY, type, width, height) {
+    constructor(sprite, type, posX, posY,  width, height) {
         this.sprite = sprite;
         this.posX= posX;
         this.posY = posY;
