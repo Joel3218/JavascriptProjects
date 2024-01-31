@@ -1,28 +1,51 @@
+// left,right space
 let input = {
-    down:{},
+    down: {},
+    pressed:{},
     init() {
-        window.addEventListener("keydown" , (e) => {
-            this.down[e.code] = true
+        // event listener set 
+        window.addEventListener("keydown", (e) => {
+            this.down[e.code] = true;
+            // console.log(e.code)
         })
-        window.addEventListener("keyup" , (e) => {
-           delete this.down[e.code]
+        window.addEventListener("keyup", (e) => {
+         delete this.down[e.code];
+         delete this.pressed[e.code];
         })
-    }
-    , 
-    update(gameObject) {
-     let mario = gameObject.entities.mario
-        if (this.isDown("ArrowLeft")) {
-            mario.posX -= mario.velX; 
-        }
-
-        if (this.isDown("ArrowRight")) {
-            mario.posX += mario.velX; 
-        }
     }
     ,
-    isDown(key) {
-        return this.down[key];
-    }
+    update(gameObj) {
+    let mario= gameObj.entities.mario
+//left 
+if(this.isDown("ArrowLeft")){
+// go left
+mario.posX-=mario.velX;
+}
 
+// right 
+if(this.isDown("ArrowRight")){
+    // go right
+mario.posX+=mario.velX;
+    }
+// space  
+console.log(mario.velY);
+if(this.isPressed("Space")){
+if(mario.velY==1.1){
+    mario.velY-=10;
+
+}
+}
+
+    }
+    ,isDown(key){
+        return this.down[key];
+    },
+    isPressed(key){
+        if(this.pressed[key]){
+              return false;
+        }else if(this.down[key]){
+            return true;
+        }
+    }
 
 }

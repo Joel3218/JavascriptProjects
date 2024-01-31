@@ -1,31 +1,30 @@
+
 class Sprite{
-    constructor(img, srcX, srcY, srcW, srcH) {
-        this.img = img;
-        this.srcX = srcX;
-        this.srcY = srcY;
-        this.srcW = srcW;
-        this.srcH = srcH;
+    constructor(img,srcX,srcY,srcW,srcH){
+this.img=img;
+this.srcX=srcX;
+this.srcY=srcY;
+this.srcW=srcW;
+this.srcH=srcH
     }
 }
-
-// place mario on the game
-// game coordinates
+// place on the game
 class Entity {
-    constructor(sprite, type, posX, posY,  width, height) {
-        this.sprite = sprite;
-        this.posX= posX;
-        this.posY = posY;
-        this.type = type;
-        this.width = width;
-        this.height = height;
+    constructor(sprite,type, posX,posY,width,height){
+        this.sprite=sprite;
+        this.type=type;
+        // game coordinates
+        this.posX=posX;
+        this.posY=posY;
+        this.width=width;
+        this.height=height;
     }
 }
-
 class Mario extends Entity{
-    constructor(spritesheet, posX, posY, width, height) {
-       let img = new Sprite(spritesheet, 652, 1, 15, 22);      
-       super(img, "mario", posX, posY, width, height);
-       this.velX = 1.8;
-    }
-    
+constructor(spritesheet,posX,posY,width,height){
+    let img=new Sprite(spritesheet,650,3,17,19);
+    super(img,"mario",posX,posY,width,height);
+    this.velX=1;
+    this.velY=0;
+}
 }

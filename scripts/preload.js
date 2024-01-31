@@ -1,12 +1,12 @@
 const castleImage = new Image();
-const cloudImage = new Image();
+const cloudsImage = new Image();
 const mountainImage = new Image();
 const spriteSheetImage = new Image();
 const tileImage = new Image();
 
 function preload() {
     castleImage.src= "../assets/sprites/castle.png";
-    cloudImage.src= "../assets/sprites/clouds.png";
+    cloudsImage.src= "../assets/sprites/clouds.png";
     mountainImage.src= "../assets/sprites/mountain.png";
     spriteSheetImage.src= "../assets/sprites/spritesheet.png";
     tileImage.src= "../assets/sprites/tileset_gutter.png";
@@ -20,7 +20,7 @@ function preload() {
             });
         })
         let p2 = new Promise(function(resolve, reject) {
-        cloudImage.addEventListener("load", function() {
+        cloudsImage.addEventListener("load", function() {
             console.log("Image loaded");
             resolve();
             });
